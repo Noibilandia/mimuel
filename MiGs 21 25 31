@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Soviet Jet Interceptors</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+/* ===== GLOBAL ===== */
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  background:
+    radial-gradient(circle at top, #0e1622 0%, #060a10 60%),
+    repeating-linear-gradient(
+      0deg,
+      rgba(255,255,255,0.03),
+      rgba(255,255,255,0.03) 1px,
+      transparent 1px,
+      transparent 40px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      rgba(255,255,255,0.03),
+      rgba(255,255,255,0.03) 1px,
+      transparent 1px,
+      transparent 40px
+    );
+  color: #dfefff;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+/* ===== HERO ===== */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+/* ===== CLASSIFIED TAG ===== */
+.classified {
+  display: inline-block;
+  border: 2px solid #ff2b2b;
+  color: #ff2b2b;
+  padding: 8px 18px;
+  letter-spacing: 4px;
+  margin: 0 auto 30px;
+  font-size: 12px;
+}
+
+/* ===== MAIN TITLE ===== */
+.title {
+  font-size: 48px;
+  font-weight: 900;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  text-shadow:
+    0 0 8px rgba(79,195,255,0.6),
+    0 0 20px rgba(79,195,255,0.3);
+}
+
+.title span {
+  color: #2fe6ff;
+}
+
+/* ===== SUBTITLE ===== */
+.subtitle {
+  margin-top: 20px;
+  letter-spacing: 6px;
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+/* ===== AIRCRAFT LINKS ===== */
+.aircraft {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.aircraft div {
+  text-align: center;
+}
+
+.aircraft h2 {
+  margin: 0;
+  font-size: 28px;
+  color: #2fe6ff;
+  letter-spacing: 4px;
+  text-shadow: 0 0 10px rgba(47,230,255,0.8);
+}
+
+.aircraft p {
+  margin-top: 8px;
+  font-size: 12px;
+  letter-spacing: 3px;
+  opacity: 0.6;
+}
+
+/* ===== SCROLL ===== */
+.scroll {
+  margin-top: 80px;
+  font-size: 11px;
+  letter-spacing: 4px;
+  opacity: 0.5;
+}
+
+.scroll span {
+  display: block;
+  font-size: 26px;
+  margin-top: 10px;
+  color: #2fe6ff;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 600px) {
+  .title {
+    font-size: 36px;
+  }
+
+  .aircraft {
+    gap: 40px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="hero">
+
+  <div class="classified">СЕКРЕТНО · CLASSIFIED</div>
+
+  <div class="title">
+    SOVIET <span>JET</span><br>
+    INTERCEPTORS
+  </div>
+
+  <div class="subtitle">
+    COLD WAR AVIATION ARCHIVES
+  </div>
+
+  <div class="aircraft">
+    <div>
+      <h2>MiG-21PD</h2>
+      <p>FISHBED-G</p>
+    </div>
+
+    <div>
+      <h2>MiG-25BP</h2>
+      <p>FOXBAT-A</p>
+    </div>
+  </div>
+
+  <div class="scroll">
+    SCROLL TO DECLASSIFY
+    <span>↓</span>
+  </div>
+
+</div>
+
+</body>
+</html>
